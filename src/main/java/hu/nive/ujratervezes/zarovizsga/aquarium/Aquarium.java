@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Aquarium {
 
+    public static final int MIN_WEIGHT = 11;
+
     private List<Fish> fishes = new ArrayList<>();
 
     public List<Fish> getFishes() {
@@ -26,7 +28,7 @@ public class Aquarium {
         Iterator<Fish> iterator = fishes.iterator();
         while (iterator.hasNext()) {
             Fish fish = iterator.next();
-            if (fish.getWeight() >= 11) {
+            if (fish.getWeight() >= MIN_WEIGHT) {
                 iterator.remove();
             }
         }
@@ -41,11 +43,3 @@ public class Aquarium {
     }
 
 }
-//- `addFish()`, amivel halakat lehet hozzáadni
-//
-//        - `feed()`, ami megeteti az összes halat az akváriumban, és ezzel megnöveli a súlyukat
-//
-//        - `removeFish()`, eltávolít minden olyan halat az akváriumból, ami legalább 11 grammos
-//
-//        - `getStatus()`, ami visszaadja a halak státuszát egy String listában
-
