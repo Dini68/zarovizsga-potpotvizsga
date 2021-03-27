@@ -5,6 +5,7 @@ public abstract class Fish {
     private String name;
     private int weight;
     private String color;
+    private boolean memoryLoss;
 
     public Fish(String name, int weight, String color) {
         this.name = name;
@@ -16,7 +17,9 @@ public abstract class Fish {
         this.weight = weight;
     }
 
-    public abstract String status();
+    public String status() {
+        return getName() + ", weight: " + getWeight() + ", color: " + getColor() + ", short term memory loss: " + hasMemoryLoss();
+    }
 
     public abstract void feed();
 

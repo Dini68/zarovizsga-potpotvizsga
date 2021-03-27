@@ -7,11 +7,6 @@ public class Clownfish extends Fish{
     }
 
     @Override
-    public String status() {
-        return getName() + ", weight: " + getWeight() + ", color: " + getColor() + ", short term memory loss: false";
-    }
-
-    @Override
     public void feed() {
         setWeight(getWeight() + 1);
     }

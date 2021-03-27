@@ -7,11 +7,6 @@ public class Kong extends Fish{
     }
 
     @Override
-    public String status() {
-        return getName() + ", weight: " + getWeight() + ", color: " + getColor() + ", short term memory loss: false";
-    }
-
-    @Override
     public void feed() {
         setWeight(getWeight() + 2);
     }

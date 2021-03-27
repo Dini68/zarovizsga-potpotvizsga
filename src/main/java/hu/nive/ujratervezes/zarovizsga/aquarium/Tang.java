@@ -7,11 +7,6 @@ public class Tang extends Fish{
     }
 
     @Override
-    public String status() {
-        return getName() + ", weight: " + getWeight() + ", color: " + getColor() + ", short term memory loss: true";
-    }
-
-    @Override
     public void feed() {
         setWeight(getWeight() + 1);
     }
